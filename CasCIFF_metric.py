@@ -50,7 +50,7 @@ increase_node = 1
 top = 30
 data_type = "CasCN_adj_step{}".format(increase_node)
 
-DATA_PATHA = './dataset/evaluate/{}/{}'.format(data_name, task)
+DATA_PATHA = './evaluate/{}/{}'.format(data_name, task)
 Save_Mode = 'CasCIFF_{}_{}'.format(data_name, task)
 Save_Mode = './save_model/' + Save_Mode + "_lr{0}_seed{1}_{2}_{3}_increase_node{4}".format(learning_rate, seed,
                                                                                            data_type, neibor,
