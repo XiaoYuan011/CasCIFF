@@ -6,9 +6,9 @@ max_nodes = 50
 node_level = {}
 data_type = 'weibo'
 interval = '/0.5h'
-isordered = '6nei_sample{}'.format(max_nodes)
-Data_Base = './../../../dataset/GTSSpaceNet/' + data_type
-Data_path = './../../../dataset/GTSSpaceNet/{0}/global/global_emb_'.format(data_type) + isordered + '.txt'
+isordered = '2nei_sample{}'.format(max_nodes)
+Data_Base = './../dataset/CasCIFF/' + data_type
+Data_path = './../dataset/CasCIFF/{0}/global/global_emb_'.format(data_type) + isordered + '.txt'
 with open(Data_path, 'r') as f:
     for line in f:
         parts = line.rstrip('\n').split('\t')
