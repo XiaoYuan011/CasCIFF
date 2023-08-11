@@ -1,10 +1,10 @@
-DATA_PATHA='./../../../../dataset/GTSSpaceNet/weibo'
+DATA_PATHA='./../dataset/CasCIFF/weibo'
 time_interval="/0.5h"
 
-# DATA_PATHA='./../../../../dataset/GTSSpaceNet/twitter'
+# DATA_PATHA='./../dataset/CasCIFF/twitter'
 # time_interval="/1day"
 
-# DATA_PATHA='./../../../../dataset/GTSSpaceNet/aps'
+# DATA_PATHA='./../dataset/CasCIFF/aps'
 # time_interval="/3year"
 
 cascades  = DATA_PATHA+"/dataset.txt"
