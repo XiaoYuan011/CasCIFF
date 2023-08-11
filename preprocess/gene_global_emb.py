@@ -111,8 +111,8 @@ def find123Nei(G, node):
         return nei1_drgees, nei2_drgees, nei3_drgees, nei4_drgees, nei5_drgees, nei6_drgees
 
 
-gg_path = './../../../dataset/GTSSpaceNet/{}/global/global_graph.pkl'.format(data_type)
-global_emb = './../../../dataset/GTSSpaceNet/{0}/global/global_emb_{1}_sample{2}.txt'.format(data_type, nei_num,
+gg_path = './../dataset/CasCIFF/{}/global/global_graph.pkl'.format(data_type)
+global_emb = './../dataset/CasCIFF/{0}/global/global_emb_{1}_sample{2}.txt'.format(data_type, nei_num,
                                                                                              max_nodes)
 with open(gg_path, 'rb') as f:
     gg = pickle.load(f)
