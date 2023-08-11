@@ -73,4 +73,4 @@ Prediction and Understanding of Information Cascades](https://dl.acm.org/doi/10.
 
 ## Contact
 
-For any questions please open an issue or drop an email to: `s211231071@stu.cqupt.edu.cn`
+For any questions please open an issue or drop an email to: `E-mail: zhuhj@cqupt.edu.cn, s211231071@stu.cqupt.edu.cn`
