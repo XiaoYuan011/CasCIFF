@@ -18,7 +18,7 @@ The code was tested with `python 3.7`, `pytorch 1.10`, `cudatoolkit 11.3.1`, and
 
 ```shell
 # create virtual environment
-conda create --name casflow python=3.7 cudatoolkit=11.3.1 cudnn=6.0
+conda create --name casciff python=3.7 cudatoolkit=11.3.1 cudnn=6.0
 
 # activate environment
 conda activate casciff
