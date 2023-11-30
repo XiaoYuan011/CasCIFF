@@ -5,7 +5,7 @@ from preprocess import config
 import sys
 import random
 import math
-
+import pickle
 class IndexDict:
     def __init__(self, original_ids):
         self.original_to_new = {}
@@ -335,6 +335,28 @@ def sequence2list(flename):
                 graphs[walks[0]].append([[int(xx) for xx in s.split(",")], int(t)])
     return graphs
 
+'''
+    The global graph generation process is the same as CasFlow
+'''
+def generate_global_graph(file_name, graph_save_path):
+    g = nx.Graph()
+
+    with open(file_name, 'r') as f:
+        for line in f:
+            parts = line.strip().split('\t')
+            paths = parts[4].strip().split(' ')
+            for path in paths:
+                nodes = path.split(':')[0].split('/')
+                if len(nodes) < 2:
+                    g.add_node(nodes[-1])
+                else:
+                    g.add_edge(nodes[-1], nodes[-2])
+
+    print("Number of nodes in global graph:", g.number_of_nodes())
+    print("Number of edges in global graph:", g.number_of_edges())
+
+    with open(graph_save_path, 'wb') as f:
+        pickle.dump(g, f)
 
 if __name__ == "__main__":
     observation_time = config.observation
@@ -350,6 +372,9 @@ if __name__ == "__main__":
                 config.shortestpath_train, config.shortestpath_val,
                 config.shortestpath_test,
                 cascades_type, discard_cascade_id)
+    print("generate global graph!!!")
+    generate_global_graph(config.cascades,
+                          config.cascades + './../global/global_graph.pkl')
 
 
 
