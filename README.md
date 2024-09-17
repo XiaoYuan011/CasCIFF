@@ -8,7 +8,7 @@
 This repo provides a reference implementation of **CasCIFF** as described in the paper:
 > [CasCIFF: A Cross-Domain Information Fusion Framework Tailored for Cascade Prediction in Social Networks](https://authors.elsevier.com/c/1jgnR3OAb9C~aG)  
 > Hongjun Zhu, Member, IEEE, Shun Yuan, Xin Liu, Kuo Chen, Chaolong Jia, and Ying Qian  
-> The paper will be published in KBS
+> The paper will be published in Knowledge-Based Systems
 
 ## Basic Usage
 
