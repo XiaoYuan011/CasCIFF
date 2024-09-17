@@ -6,9 +6,9 @@
 ![](https://img.shields.io/badge/cudnn-6.0-green)
  
 This repo provides a reference implementation of **CasCIFF** as described in the paper:
-> [CasCIFF: A Cross-Domain Information Fusion Framework Tailored for Cascade Prediction in Social Networks](https://arxiv.org/abs/2308.04961)  
+> [CasCIFF: A Cross-Domain Information Fusion Framework Tailored for Cascade Prediction in Social Networks](https://authors.elsevier.com/c/1jgnR3OAb9C~aG)  
 > Hongjun Zhu, Member, IEEE, Shun Yuan, Xin Liu, Kuo Chen, Chaolong Jia, and Ying Qian  
-> This paper will be released soon
+> The paper will be published in KBS
 
 ## Basic Usage
 
